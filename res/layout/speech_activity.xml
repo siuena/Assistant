@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/speech_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/speech_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/speech_input_hit"
+            android:minLines="5" />
+
+        <TextView
+           android:id="@+id/speech_ready"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/label_color"
+            android:layout_height="wrap_content"
+            android:text="准备中..."
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/speech_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:indeterminate="false" />
+
+        <Button
+            android:id="@+id/speech_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speech_label" />
+    </LinearLayout>
+
+</LinearLayout>

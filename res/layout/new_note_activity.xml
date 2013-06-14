@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:stretchColumns="1" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/new_note_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow android:layout_marginTop="5dp" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:gravity="center"
+            android:text="@string/name" />
+
+        <EditText android:id="@+id/new_note_name" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="5dp" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:gravity="center"
+            android:text="@string/memo" />
+
+        <EditText
+            android:id="@+id/new_note_memo"
+            android:minLines="3" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/new_note_addNewWord"
+        android:text="@string/add_new_word_label" />
+
+</TableLayout>

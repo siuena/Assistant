@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="label_text_size">16dp</dimen>
+    <dimen name="label_result_text_size">20dp</dimen>
+    <dimen name="margin_title_height">15dp</dimen>
+    <dimen name="margin_top_height">5dp</dimen>
+    <dimen name="margin_left">5dp</dimen>
+    <dimen name="margin_larger_left">10dp</dimen>
+    <dimen name="margin_right">5dp</dimen>
+    <dimen name="margin_larger_right">10dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
+    <dimen name="margin_top_larger_height">10dp</dimen>
+    <dimen name="margin_all_direction">5dp</dimen>
+    <dimen name="margin_larger_all_direction">10dp</dimen>
+    <dimen name="margin_divide_height">20dp</dimen>
+    <dimen name="pading_left_width">25dp</dimen>
+    <dimen name="pading_larger_left">10dp</dimen>
+    <dimen name="pading_more_larger_left">15dp</dimen>
+    <dimen name="pading_left">5dp</dimen>
+    <dimen name="pading_larger_right">10dp</dimen>
+    <dimen name="pading_top">5dp</dimen>
+    <dimen name="padding_larger_top">10dp</dimen>
+    <dimen name="pading_right">5dp</dimen>
+    <dimen name="pading_bottom">5dp</dimen>
+    <dimen name="footer_smaller_height">20dp</dimen>
+    <dimen name="footer_height">30dp</dimen>
+    <dimen name="footer_larger_height">40dp</dimen>
+    <dimen name="pading_bottom_height">5dp</dimen>
+    <dimen name="weather_status_image_width">180px</dimen>
+    <dimen name="weather_status_image_height">180px</dimen>
+
+    <!-- android系统状态栏高度为38dp -->
+    <dimen name="android_system_title_height">38dp</dimen>
+    <!-- 设置绘制表格的区域 -->
+    <dimen name="weather_history_margin">40dp</dimen>
+    <!-- 天气温度的字体大小 -->
+    <dimen name="weather_history_text_size">10sp</dimen>
+    <!-- 天气温度节点半径大小 -->
+    <dimen name="weather_history_cycle_radius">3dp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+
+</resources>

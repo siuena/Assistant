@@ -1,0 +1,179 @@
+<resources>
+
+    <!-- 这些数据供所有页面共享 -->
+    <string name="app_name">Assistant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Simplify your life</string>
+    <string name="menu_settings">Settings</string>
+    <string name="data_from">以上数据来源于：http://www.36wu.com</string>
+    <string name="name">名称：</string>
+    <string name="memo">备注：</string>
+    <string name="save">保存</string>
+    <string name="bus_province_data_json">[{"cityList":["北京"],"province":"北京"},{"cityList":["重庆"],"province":"重庆"},{"cityList":["上海"],"province":"上海"},{"cityList":["天津"],"province":"天津"},{"cityList":["合肥","安庆","蚌埠","亳州","巢湖","池州","滁州","阜阳","淮北","淮南","黄山","六安","马鞍山","宿州","铜陵","芜湖","宣城"],"province":"安徽"},{"cityList":["福州","龙岩","南平","宁德","莆田","泉州","三明","厦门","漳州"],"province":"福建"},{"cityList":["白银","兰州","酒泉","金昌","武威"],"province":"甘肃"},{"cityList":["广州","潮州","东莞","佛山","河源","惠州","江门","揭阳","茂名","梅州","清远","汕头","汕尾","韶关","深圳","阳江","云浮","湛江","肇庆","中山","珠海"],"province":"广东"},{"cityList":["南宁","北海","防城港","桂林","河池","柳州"],"province":"广西"},{"cityList":["贵阳"],"province":"贵州"},{"cityList":["海口","三亚"],"province":"海南"},{"cityList":["石家庄","保定","沧州","承德","邯郸","衡水","廊坊","秦皇岛","唐山","邢台","张家口"],"province":"河北"},{"cityList":["郑州","安阳","鹤壁","济源","焦作","开封","洛阳","漯河","南阳","平顶山","濮阳","三门峡","商丘","新乡","信阳","许昌","周口","驻马店"],"province":"河南"},{"cityList":["哈尔滨","大庆","鹤岗","黑河","鸡西","佳木斯","牡丹江","七台河","齐齐哈尔","双鸭山","绥化","伊春"],"province":"黑龙江"},{"cityList":["武汉","鄂州","恩施","黄冈","黄石","荆门","荆州","潜江","十堰","随州","神农架","天门","仙桃","咸宁","襄樊","孝感","宜昌"],"province":"湖北"},{"cityList":["长沙","常德","郴州","衡阳","怀化","娄底","邵阳","湘潭","益阳","永州","岳阳","张家界","株洲"],"province":"湖南"},{"cityList":["长春","白城","白山","吉林","辽源","四平","松原","通化","延吉"],"province":"吉林"},{"cityList":["南京","常州","淮安","连云港","南通","苏州","宿迁","泰州","无锡","徐州","盐城","扬州","镇江"],"province":"江苏"},{"cityList":["南昌","抚州","赣州","吉安","景德镇","九江","萍乡","上饶","新余","宜春","鹰潭"],"province":"江西"},{"cityList":["沈阳","鞍山","本溪","朝阳","大连","丹东","抚顺","阜新","葫芦岛","锦州","辽阳","盘锦","铁岭","营口"],"province":"辽宁"},{"cityList":["呼和浩特","包头","赤峰"],"province":"内蒙古"},{"cityList":["银川"],"province":"宁夏"},{"cityList":["西宁"],"province":"青海"},{"cityList":["济南","滨州","德州","东营","菏泽","济宁","莱芜","聊城","临沂","青岛","日照","泰安","威海","潍坊","烟台","枣庄","淄博"],"province":"山东"},{"cityList":["太原","长治","大同","晋城","晋中","临汾","吕梁","朔州","忻州","阳泉","运城"],"province":"山西"},{"cityList":["西安","安康","宝鸡","汉中","商洛","铜川","渭南","咸阳","延安","榆林"],"province":"陕西"},{"cityList":["成都","巴中","达州","德阳","广安","广元","乐山","泸州","眉山","绵阳","内江","南充","攀枝花","遂宁","雅安","宜宾","资阳","自贡"],"province":"四川"},{"cityList":["拉萨","日喀则"],"province":"西藏"},{"cityList":["乌鲁木齐","吐鲁番"],"province":"新疆"},{"cityList":["昆明","大理","曲靖","西双版纳","玉溪","昭通"],"province":"云南"},{"cityList":["杭州","湖州","嘉兴","金华","丽水","宁波","衢州","绍兴","台州","温州","舟山"],"province":"浙江"}]</string>
+
+    <!-- 主界面 -->
+    <string name="main_phone_location">号码</string>
+    <string name="main_weather">天气</string>
+    <string name="main_book">图书</string>
+    <string name="main_word">Word</string>
+    <string name="main_bus">公交</string>
+    <string name="phone_location">手机归属地查询</string>
+    <string name="test_book">测试获取书籍基本信息</string>
+    <string name="test_people">测试获取用户信息</string>
+    <string name="test_review">测试获取书籍评论信息</string>
+    <string name="menu_about">关于</string>
+
+    <!-- 号码归属地查询界面 -->
+    <string name="phone_location_title">手机归属地查询</string>
+    <string name="phone_location_input_number_label">请输入手机号码：</string>
+    <string name="phone_location_input_number_hint">请输入手机号码（至少输入前7位）</string>
+    <string name="phone_location_query_location">查询</string>
+    <string name="phone_location_show_result_label">当前号码的归属地信息如下</string>
+    <string name="phone_location_result_phoneNumber">手机号码：</string>
+    <string name="phone_location_result_province">省份：</string>
+    <string name="phone_location_result_city">城市：</string>
+    <string name="phone_location_result_areaCode">城市区号：</string>
+    <string name="phone_location_result_zipCode">邮政编码：</string>
+    <string name="phone_location_result_corporation">运营商：</string>
+    <string name="phone_location_result_cardType">卡类型：</string>
+
+    <!-- 通过ISBN搜索书籍界面 -->
+    <string name="search_book_by_isbn_title">搜索图书</string>
+    <string name="search_book_by_isbn_input_isbn_label">请扫描/输入书籍的ISBN</string>
+    <string name="search_book_by_isbn_button_scanIsbn_desc">通过ISBN搜索图书</string>
+    <string name="search_book_by_isbn_button_search_desc">通过扫描获取书籍的ISBN</string>
+    <string name="search_book_by_isbn_QiYeXue_isbn">9787538737325</string>
+    <string name="search_book_by_isbn_YuQingKongZhiLan">9787503940361</string>
+    <string name="search_book_by_isbn_HuHuaLing">9787801875310</string>
+    <string name="search_book_by_isbn_huoLuanShiQiDeAiQing_isbn">9787544258975</string>
+    <string name="search_book_by_isbn_shiLuoDeYiJiao_isbn">9787544225168</string>
+
+    <!-- 图书搜索结果界面 -->
+    <string name="book_search_result_title">图书信息</string>
+    <string name="book_search_result_tab_bookBasicInfo">图书</string>
+    <string name="book_search_result_tab_bookPrices">价格</string>
+    <string name="book_search_result_tab_bookReviews">评论</string>
+    <string name="book_search_result_cursor_desc">导航游标</string>
+
+    <!-- 显示书籍基本信息的页面 -->
+    <string name="book_basic_info_title">基本信息</string>
+    <string name="book_basic_info_bookCover">封面</string>
+    <string name="book_basic_info_bookName">书名：</string>
+    <string name="book_basic_info_bookOriginName">原名：</string>
+    <string name="book_basic_info_author">作者：</string>
+    <string name="book_basic_info_translator">译者：</string>
+    <string name="book_basic_info_price">定价：</string>
+    <string name="book_basic_info_pages">页数：</string>
+    <string name="book_basic_info_binding">装帧：</string>
+    <string name="book_basic_info_isbn">ISBN：</string>
+    <string name="book_basic_info_publisher">出版社：</string>
+    <string name="book_basic_info_pubDate">出版日期：</string>
+    <string name="book_basic_info_rating">评级：</string>
+    <string name="book_basic_info_bookSummary">书籍简介</string>
+    <string name="book_basic_info_authorSummary">作者简介</string>
+    <string name="book_basic_info_bookCover_desc">书籍的封面</string>
+
+    <!-- 图书价格界面 -->
+    <string name="book_prices_price">价格</string>
+    <string name="book_prices_originPrice">定价：</string>
+    <string name="book_prices_dangdang">当当网：</string>
+    <string name="book_prices_360buy">京东商城：</string>
+    <string name="book_prices_amazon">亚马逊：</string>
+    <string name="book_prices_99Shucheng">99书城：</string>
+
+    <!-- 图书评论列表项 -->
+    <string name="book_reviews_list_item_pubDate">发表于</string>
+
+    <!-- 评论全文界面 -->
+    <string name="book_review_content_title">评论全文</string>
+    <string name="book_review_content_peopleIcon_desc">头像</string>
+    <string name="book_review_content_author">昵称：</string>
+    <string name="book_review_content_rating">评级：</string>
+    <string name="book_review_content_pubDate">发表于：</string>
+    <string name="book_review_content_votes">有用：</string>
+    <string name="book_review_content_useless">无用：</string>
+
+    <!-- 个人信息界面 -->
+    <string name="people_info_detail_title">个人信息</string>
+    <string name="people_info_detail_peopleIcon_desc">头像</string>
+    <string name="people_info_detail_author">昵称：</string>
+    <string name="people_info_detail_uid">ID：</string>
+    <string name="people_info_detail_location">居住地：</string>
+    <string name="people_info_detail_signature">签名</string>
+    <string name="people_info_detail_content">个人介绍</string>
+    <string name="people_info_detail_homePage">个人主页</string>
+
+    <!-- 关于页面 -->
+    <string name="about_title">关于</string>
+    <string name="about_app_name">Assistant v0.0.1</string>
+    <string name="about_author_info">作者：</string>
+    <string name="about_author_email">dcnbchdx@163.com</string>
+    <string name="about_app_help_title">使用说明</string>
+    <string name="about_app_help"> 1：查询用户的号码归属地。\n
+       2：通过ISBN查询书籍信息， 比较当当、亚马逊、99书城书籍价格以及查看豆瓣用户对该书籍的评论。\n
+       3：查询用户当前所在地的天气信息，或者手动输入地点获取天气信息。</string>
+
+    <!-- 搜索天气界面 -->
+    <string name="weather_search_title">天气搜索</string>
+    <string name="weather_search_input_label">请输入城市名称/拼音/邮政编码/区号</string>
+    <string name="weather_search_chooseCity_label">选择城市</string>
+    <string name="weather_history_action_label">历史天气</string>
+
+    <!-- 天气信息结果界面 -->
+    <string name="weather_action_title">实时天气</string>
+    <string name="weather_day_title">白天</string>
+    <string name="weather_night_title">夜间</string>
+    <string name="weather_other_title">其他信息</string>
+    <string name="weather_diagram_action_title">走势图</string>
+
+    <!-- 实时天气界面 -->
+    <string name="weather_realtime_title">实时天气信息</string>
+    <string name="weather_realtime_temperature_label">温度：</string>
+    <string name="weather_realtime_windDirection_label">风向：</string>
+    <string name="weather_realtime_windSpeed_label">风速：</string>
+    <string name="weather_realtime_humidity_label">湿度：</string>
+    <string name="weather_realtime_time_label">检测时间：</string>
+
+    <!-- 历史天气页面 -->
+    <string name="weather_history_no_data_label">无数据!</string>
+    <string name="weather_history_title_label">历史城市</string>
+
+    <!-- Word页面 -->
+    <string name="word_title">Word</string>
+    <string name="word_notebook_label">单词本</string>
+    <string name="translate_label">翻译</string>
+    <string name="speech_label">朗读</string>
+
+    <!-- 翻译页面 -->
+    <string name="translate_zh_to_en_label">汉->英</string>
+    <string name="translate_en_to_zh_label">英->汉</string>
+    <string name="translate_input_hit">请输入待翻译文本</string>
+
+    <!-- 朗读页面 -->
+    <string name="speech_input_hit">请输入待朗读文本</string>
+
+    <!-- 单词本页面 -->
+    <string name="note_title">单词本</string>
+    <string name="new_note_title">新单词本</string>
+    <string name="add_new_word_label">添加新单词</string>
+
+    <!-- 单词页面 -->
+    <string name="new_word_title">新单词</string>
+    <string name="new_word_meaning">释义：</string>
+    <string name="new_word_sample">例子：</string>
+
+    <!-- 公交页面 -->
+    <string name="bus_title">公交</string>
+    <string name="station_label">站点查询</string>
+    <string name="line_label">线路查询</string>
+    <string name="transfer_label">换乘查询</string>
+    <string name="bus_history">查询历史</string>
+
+    <!-- 测试页面 -->
+    <string name="test_title">测试</string>
+    <string name="test_page_next">下一页</string>
+    <string name="test_page_pre">上一页</string>
+    <string name="test_page_start">首页</string>
+    <string name="test_page_end">末页</string>
+
+</resources>

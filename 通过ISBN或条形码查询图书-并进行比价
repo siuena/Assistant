@@ -1,0 +1,38 @@
+当当
+通过当当网可以查询图书信息,key="ISBN/条形码";
+http://searchb.dangdang.com/?key=9787503940361
+通过这个连接(http://m.dangdang.com/gw_search.php?key=9787503940361)可以查询到图书的价格和其关联的URL,
+通过保存书籍的价格和URL然后直接可以实例化一个WebClient, 然后在程序中直接显示书籍详情界面. 
+移动版: http://m.dangdang.com/product.php?pid=20753525&sid=361ad259aad67619
+在查询到的页面可以获取书籍的信息和封面.
+
+亚马逊
+通过一下连接可以在亚马逊通过"ISBN/条形码"查询到书籍的信息.
+http://www.amazon.cn/s/ref=nb_sb_noss?field-keywords=9787538736618
+移动版: http://www.amazon.cn/gp/aw/s/ref=is_box_?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&k=9787538736618
+http://www.amazon.cn/gp/aw/s/ref=is_box_?__mk_zh_CN=亚马逊网站&k=9787538736618
+
+京东
+http://search.360buy.com/Search?keyword=9787503940361
+移动版: http://wap.360buy.com/ware/search.action?keyword=9787503940361
+
+使用豆瓣的评论.
+http://book.douban.com/subject_search?search_text=9787503940361
+移动版: http://m.douban.com/book_search?q=9787503940361
+其中q/search_text可以是作者/ISBN/书名.
+在这个页面可以解析出查询到的书籍的数目和其具体的网址.
+如果查询到的书籍的数目等于0, 则不显示书评.
+否则, 通过查询到的书籍的URL(http://book.douban.com/subject/4199686/)获取书评页面, 然后在新的页面显示书评.
+http://m.douban.com/book/subject/4199686/reviews
+
+通过扫描条形码,获取ISBN进行查询,通过直接输入ISBN进行查询.
+获取图书的书名,作者,封面,出版社,出版日期,价格.
+通过查询多家网址,可以进行比价.
+
+99书城
+ <p class="ll">
+    <b>￥20.5</b>
+    <del>￥29.8</del>
+    <i>69折</i>
+http://search.bookuu.com/?k=9787503940361
+如果通过ISBN查询到多本书, 则只获取第一本书的详细信息.

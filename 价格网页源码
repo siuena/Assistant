@@ -1,0 +1,83 @@
+当当网页价格; 
+http://m.dangdang.com/gw_search.php?key=9787503940361
+首先后去<div class="ddmlist">, 然后获取其子节点中的文本以"当当价："开头的就是其价格.
+同时获取其URL.
+<div class="ddmlist">
+	  <p>
+          <span class="prouct_name"><a href="product.php?pid=20753525&sid=07d24384efd117ce">羽·青空之蓝（幻想言情天后沧月作品 ，【云荒】风云再...</a></span><br />
+          <span><img src="http://img35.ddimg.cn/56/3/20753525-1_m.jpg" alt="" /></span><br />
+          <span>当当价：20.60</span><br />
+          <span>顾客评分<span><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/></span>(1547)</span><br />
+          
+          <!--
+                              <span class="status_have">
+                现在有货
+                </span>
+                        -->
+
+      </p>
+	  <p>
+          <span class="prouct_name"><a href="product.php?pid=20770760&sid=07d24384efd117ce">羽？青空之蓝（沧月 亲笔签名版）</a></span><br />
+          <span><img src="http://img30.ddimg.cn/65/33/20770760-1_m.jpg" alt="" /></span><br />
+          <span>当当价：19.40</span><br />
+          <span>顾客评分<span><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_all.gif"/><img src="/images/star_half.gif"/></span>(36)</span><br />
+          
+          <!--
+                              <span class="status_no" >暂时缺货</span>
+                        -->
+
+      </p>
+</div>
+
+
+亚马逊:
+首先寻找 table class="dpPrice", 然后再在其中寻找<span class="dpOurPrice">就可以找到其价格.
+<table border="0" class="dpPrice">
+<tr>
+<td align="right">
+<span class="dpPriceLabel">
+市场价:
+</span>
+</td>
+<td align="left">
+<span class="dpListPrice">￥29.80</span>
+</td>
+</tr>
+<tr>
+<td align="right">
+<span class="dpPriceLabel">
+价格:
+</span>
+</td>
+<td align='left'>
+<span class="dpOurPrice">
+￥19.10
+</span>
+<span class="itemBadge">
+</span>
+</td>
+</tr>
+<tr>
+<td align="right">
+<span class="dpPriceLabel">
+为您节省:
+</span>
+</td>
+<td align="left">
+<span>
+￥10.70
+(6.4折)
+</span>
+</td>
+</tr>
+</table>
+
+
+99书城:
+书籍价格:
+ <p class="ll">
+    <b>￥20.5</b>
+    <del>￥29.8</del>
+    <i>69折</i>
+书籍网址:
+<h3 class="summary"><a href="http://detail.bookuu.com/1664376.html"  target="_blank" class="l">羽(卷1青空之蓝)</a> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="activity_back_color">#DCDCDC</color>
+    <color name="title_color">#7B68EE</color>
+    <color name="label_color">#738291</color>
+    <color name="divider_black">#738291</color>
+    <color name="listview_divider">#808080</color>
+    <color name="black">#000000</color>
+
+    
+    <color name="purple">#ffaa66cc</color>
+    <color name="green">#ff669900</color>
+    <color name="blue">#ff0099cc</color>
+    <color name="gray">#aaa</color>
+    <color name="orange">#ffff8800</color>
+</resources>

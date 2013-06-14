@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/book_reviews_list_item_title"
+        style="@style/ResultTextFont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pading_larger_left"
+            android:paddingRight="@dimen/pading_larger_right" >
+
+            <TextView
+                android:id="@+id/book_reviews_list_item_author"
+                style="@style/TipTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/book_reviews_list_item_rating"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:max="5"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/book_reviews_list_item_ratingScore"
+                style="@style/TipTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/book_reviews_list_item_summary"
+            style="@style/TipTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/pading_bottom" >
+
+            <TextView
+                style="@style/TipTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_reviews_list_item_pubDate" />
+
+            <TextView
+                android:id="@+id/book_reviews_list_item_pubDate"
+                style="@style/TipTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

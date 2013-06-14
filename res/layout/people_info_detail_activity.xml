@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/people_info_detail_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_direction"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/people_info_detail_peopleIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/people_info_detail_peopleIcon_desc"
+            android:scaleType="center"
+            android:src="@drawable/people_icon_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/people_info_detail_author" />
+
+                <TextView
+                    android:id="@+id/people_info_detail_author"
+                    style="@style/TipTextFont"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/people_info_detail_uid" />
+
+                <TextView
+                    android:id="@+id/people_info_detail_uid"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/people_info_detail_location" />
+
+                <TextView
+                    android:id="@+id/people_info_detail_location"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_height"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/people_info_detail_signature" />
+
+        <TextView
+            android:id="@+id/people_info_detail_signature"
+            style="@style/TipTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_height"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/people_info_detail_content" />
+
+        <TextView
+            android:id="@+id/people_info_detail_content"
+            style="@style/TipTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top_height"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/people_info_detail_homePage" />
+
+        <TextView
+            android:id="@+id/people_info_detail_homePage"
+            style="@style/TipTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web" />
+    </LinearLayout>
+
+</LinearLayout>

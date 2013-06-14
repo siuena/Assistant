@@ -1,0 +1,87 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <!-- 大星星按钮图标 -->
+    <style name="MainStarBig">
+        <item name="android:layout_width">128px</item>
+        <item name="android:layout_height">128px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 小星星样式 -->
+    <style name="MainStarSmall">
+        <item name="android:layout_width">32px</item>
+        <item name="android:layout_height">32px</item>
+    </style>
+
+    <!-- 用于设置在页面中显示提示信息的TextView组件的文字属性 -->
+    <style name="TipTextFont">
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:textColor">@color/label_color</item>
+    </style>
+
+    <!-- 用于设置在页面上显示结果信息的TextView组件的文字属性 -->
+    <style name="ResultTextFont">
+        <item name="android:textSize">@dimen/label_result_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 每个页面最上方显示当前页面的标题 -->
+    <style name="TitleTextFont">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@color/title_color</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- 分页导航中标题的显示 -->
+    <style name="TabTitleFont">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@color/title_color</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    <!-- 用于页面导航 -->
+    <style name="NavigatorTextFont">
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- 星型评级 -->
+    <style name="StarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full</item>
+        <item name="android:minHeight">17px</item>
+        <item name="android:maxHeight">17px</item>
+    </style>
+
+    <!-- 天气信息显示界面的文本 样式 -->
+    <style name="WeatherText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 天气信息显示界面的文本 样式 -->
+    <style name="WeatherSmallText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 翻译和公交主页面TextView样式 -->
+    <style name="AppText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

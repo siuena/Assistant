@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <TextView
+        android:id="@+id/main_textview_word"
+        style="@style/MainStarBig"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/star_black_light"
+        android:text="@string/main_word"
+        android:textColor="#7B68EE"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/main_textview_weather"
+        style="@style/MainStarBig"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/star_purple"
+        android:text="@string/main_weather"
+        android:textColor="#708090"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/main_textview_book"
+        style="@style/MainStarBig"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/star_green"
+        android:text="@string/main_book"
+        android:textColor="#696969"
+        tools:context=".MainActivity" />
+
+    <TextView
+        style="@style/MainStarSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="220dp"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/star_small_blue"
+        tools:context=".MainActivity" />
+
+    <TextView
+        style="@style/MainStarSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/star_small_blue"
+        tools:context=".MainActivity" />
+
+    <TextView
+        style="@style/MainStarSmall"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/star_small_blue"
+        tools:context=".MainActivity" />
+
+    <TextView
+        style="@style/MainStarSmall"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/star_small_blue"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/main_textview_bus"
+        style="@style/MainStarBig"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/star_purple"
+        android:text="@string/main_bus"
+        android:textColor="@color/label_color" />
+
+</RelativeLayout>

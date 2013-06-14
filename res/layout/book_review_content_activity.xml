@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/book_review_content_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_all_direction"
+        android:layout_marginTop="@dimen/margin_top_height"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/book_review_content_title"
+            style="@style/ResultTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_height"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/book_review_content_peopleIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/book_review_content_peopleIcon_desc"
+                android:scaleType="center"
+                android:src="@drawable/people_icon_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TipTextFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/book_review_content_author" />
+
+                    <TextView
+                        android:id="@+id/book_review_content_author"
+                        style="@style/TipTextFont"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TipTextFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/book_review_content_rating" />
+
+                    <RatingBar
+                        android:id="@+id/book_review_content_rating"
+                        style="@style/StarRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:focusable="false"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:progress="0" />
+
+                    <TextView
+                        android:id="@+id/book_review_content_ratingScore"
+                        style="@style/TipTextFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:gravity="center_horizontal"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TipTextFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/book_review_content_pubDate" />
+
+                    <TextView
+                        android:id="@+id/book_review_content_pubDate"
+                        style="@style/TipTextFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/book_review_content_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_larger_height"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footer_smaller_height"
+        android:layout_marginRight="@dimen/margin_larger_right"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|fill_vertical"
+            android:text="@string/book_review_content_votes" />
+
+        <TextView
+            android:id="@+id/book_review_content_votes"
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|fill_vertical" />
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_larger_left"
+            android:gravity="center_vertical|fill_vertical"
+            android:text="@string/book_review_content_useless" />
+
+        <TextView
+            android:id="@+id/book_review_content_useless"
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|fill_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

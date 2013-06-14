@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:paddingTop="@dimen/pading_top" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margin_all_direction"
+        android:focusable="true"
+        android:stretchColumns="1" >
+
+        <TextView
+            style="@style/ResultTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/book_prices_price" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/book_prices_originPrice" />
+
+            <TextView
+                android:id="@+id/book_prices_originPrice"
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="@string/book_prices_dangdang" />
+
+            <TextView
+                android:id="@+id/book_prices_dangdang"
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/book_prices_go"
+                android:gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="@string/book_prices_amazon" />
+
+            <TextView
+                android:id="@+id/book_prices_amazon"
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/book_prices_go"
+                android:gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="@string/book_prices_99Shucheng" />
+
+            <TextView
+                android:id="@+id/book_prices_99Shucheng"
+                style="@style/ResultTextFont"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/book_prices_go"
+                android:gravity="center_vertical" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

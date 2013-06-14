@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/book_reviews_reviewList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:choiceMode="singleChoice"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/book_reviews_linearlayout_navigator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footer_larger_height"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/listview_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/book_reviews_textview_start"
+                style="@style/NavigatorTextFont"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:text="@string/test_page_start" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/divider_black" />
+
+            <TextView
+                android:id="@+id/book_reviews_textview_pre"
+                style="@style/NavigatorTextFont"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/test_page_pre" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/divider_black" />
+
+            <TextView
+                android:id="@+id/book_reviews_textview_next"
+                style="@style/NavigatorTextFont"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:text="@string/test_page_next" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/divider_black" />
+
+            <TextView
+                android:id="@+id/book_reviews_textview_end"
+                style="@style/NavigatorTextFont"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:text="@string/test_page_end" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

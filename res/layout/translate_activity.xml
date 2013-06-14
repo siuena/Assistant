@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_back_color"
+    android:scrollbars="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/translate_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/translate_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/translate_input_hit"
+            android:minLines="5" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/translate_en_to_zh"
+                style="@style/AppText"
+                android:checked="true"
+                android:text="@string/translate_en_to_zh_label" />
+
+            <RadioButton
+                android:id="@+id/translate_zh_to_en"
+                style="@style/AppText"
+                android:text="@string/translate_zh_to_en_label" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/translate_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/translate_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/translate_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/translate_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/speech_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speech_label" />
+    </LinearLayout>
+
+</LinearLayout>

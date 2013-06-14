@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/phone_location_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_direction"
+        android:layout_marginTop="@dimen/margin_title_height"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_height"
+            android:text="@string/phone_location_input_number_label" />
+
+        <EditText
+            android:id="@+id/phoneLocation_editText_inputNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_height"
+            android:ems="10"
+            android:hint="@string/phone_location_input_number_hint"
+            android:inputType="phone"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/phoneLocation_button_queryLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_location_query_location" />
+
+        <!-- 使用表格显示查询出来的号码归属地信息 -->
+
+        <TableLayout
+            android:id="@+id/phone_location_result_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_height"
+            android:stretchColumns="1"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/TipTextFont"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_divide_height"
+                android:gravity="center_horizontal"
+                android:text="@string/phone_location_show_result_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_phoneNumber" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_phoneNumber"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="13572590985" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_province" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_province"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="陕西省" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_city" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_city"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="西安市" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_areaCode" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_areaCode"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="029" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_zipCode" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_zipCode"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="710021" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_corporation" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_corporation"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="中国移动" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/phone_location_result_cardType" />
+
+                <TextView
+                    android:id="@+id/phone_location_result_cardType"
+                    style="@style/TipTextFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pading_left_width"
+                    android:text="SIM卡" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:autoLink="web"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/pading_bottom_height"
+        android:text="@string/data_from"
+        android:textColor="@color/label_color" />
+
+</LinearLayout>

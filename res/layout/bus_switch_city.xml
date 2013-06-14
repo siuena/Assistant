@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="切换城市"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/bus_switch_city_searchInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="请输入城市名称"
+        android:inputType="none"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <ExpandableListView
+        android:id="@+id/bus_switch_city_provinceDataView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollingCache="false"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="true"
+        android:listSelector="@null" >
+    </ExpandableListView>
+
+    <ListView
+        android:id="@+id/bus_switch_city_searchResultListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="true"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

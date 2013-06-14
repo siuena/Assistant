@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleTextFont"
+        android:text="@string/search_book_by_isbn_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all_direction"
+        android:layout_marginTop="@dimen/margin_title_height"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/TipTextFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_height"
+            android:text="@string/search_book_by_isbn_input_isbn_label" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_direction"
+            android:layout_marginTop="@dimen/margin_title_height"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_book_by_isbn_edittext_inputIsbn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ems="10"
+                android:inputType="none"
+                android:singleLine="true" 
+                android:text="@string/search_book_by_isbn_YuQingKongZhiLan">
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/search_book_by_isbn_button_scanIsbn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/search_book_by_isbn_button_scanIsbn_desc"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/search_book_by_isbn_button_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/search_book_by_isbn_button_search_desc"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+
+</LinearLayout>
